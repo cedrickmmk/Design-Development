@@ -45,3 +45,21 @@ body {
     border: none;
     transition: transform 0.2s ease, background-color 0.2s ease;
 }
+
+/* Storage Text & Labels */
+.storage-text {
+    color: var(--pale-blue);
+}
+
+.storage-labels {
+    color: var(--pale-blue);
+    font-size: 12px;
+}
+
+/* Custom Bootstrap Progress Bar */
+.custom-progress {
+    height: 20px;
+    background-color: hsl(229, 57%, 11%, 0.6);
+    border-radius: 10px;
+    padding: 3px;
+    }
