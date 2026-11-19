@@ -62,4 +62,36 @@ body {
     background-color: hsl(229, 57%, 11%, 0.6);
     border-radius: 10px;
     padding: 3px;
-    }
+}
+
+.custom-progress-bar {
+background: linear-gradient(90deg, var(--gradient-start) 0%, var(--gradient-end) 100%);
+border-radius: 10px;
+position: relative;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+padding-right: 2px;
+}
+
+/* White Circle Inside Progress Bar Tip */
+.progress-dot {
+width: 10px;
+height: 10px;
+background-color: #ffffff;
+border-radius: 50%;
+display: inline-block;
+}
+
+/* 185 GB Left Badge (Mobile Default: Centered Overlapping Bottom) */
+.gb-badge {
+background-color: #ffffff;
+color: var(--very-dark-blue);
+padding: 12px 24px;
+border-radius: 10px;
+position: absolute;
+bottom: -36px;
+left: 50%;
+transform: translateX(-50%);
+white-space: nowrap;
+}
