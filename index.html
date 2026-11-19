@@ -11,16 +11,37 @@
      <title>Frontend Mentor | Fylo data storage component</title>
 
   </head>
-  <body>
+
+  <body class="d-flex align-items-center justify-content-center min-vh-100">
 
     <main class="container">
-      <div class="">
+      <div class="row justify-content-center align-items-end g-4">
 
-        <!-- ------Left Card logo------ -->
+<!-- Left Card: Logo & Action Icons -->
+      <div class="col-12 col-md-5 col-lg-4">
+        <div class="card fylo-card left-card border-0 p-4 p-md-5">
+           <img src="./images/logo.svg" alt="Fylo Logo" class="mb-4" style="width: 135px;">
+          <div class="d-flex gap-3">
+
+             <button class="btn icon-box d-flex align-items-center justify-content-center" aria-label="Document">
+               <img src="./images/icon-document.svg" alt="">
+             </button>
+
+             <button class="btn icon-box d-flex align-items-center justify-content-center" aria-label="Folder">
+              <img src="./images/icon-folder.svg" alt="">
+             </button>
+
+             <button class="btn icon-box d-flex align-items-center justify-content-center" aria-label="Upload">
+               <img src="./images/icon-upload.svg" alt="">
+             </button>
+
+          </div>
+        </div>
+      </div>
+
+        <!-- ------Right card storage------ -->
+        
         <div>
-          <img src="./images/logo.svg" alt="fylo logo" 
-          class="">
-        </div> 
 
           <p class="storage-text">
             <strong class=""> used 815 GB </strong> of your storage
@@ -31,6 +52,7 @@
             
           <span> 0 GB</span>
           <span> 1000 GB</span>
+        </div>
       
        </div>
     </main> 
