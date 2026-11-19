@@ -10,3 +10,38 @@
     --blue-850: hsl(228, 56%, 26%);
     --blue-950: hsl(229, 57%, 11%);
 }
+
+/* Base & Mobile Background */
+body {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    background-color: var(--very-dark-blue);
+    background-image: url('./images/bg-mobile.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: var(--blue-950);
+}
+
+/* Shared Card Styling */
+.fylo-card {
+    background-color: var(--dark-blue);
+    border-radius: 10px;
+}
+
+/* Left Card Signature Top-Right Curve */
+.left-card {
+    border-top-right-radius: 100px;
+}
+
+/* Dark Icon Buttons */
+.icon-box {
+    width: 48px;
+    height: 48px;
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+    border: none;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
