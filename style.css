@@ -17,7 +17,7 @@ body {
     width: 100vw;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    background-color: var(--very-dark-blue);
+    background-color: var(--blue-950);
     background-image: url('./images/bg-mobile.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,7 +40,7 @@ body {
 .icon-box {
     width: 48px;
     height: 48px;
-    background-color: var(--very-dark-blue);
+    background-color: var(--blue-850);
     border-radius: 10px;
     border: none;
     transition: transform 0.2s ease, background-color 0.2s ease;
@@ -48,18 +48,18 @@ body {
 
 /* Storage Text & Labels */
 .storage-text {
-    color: var(--pale-blue);
+    color: var(--blue-200);
 }
 
 .storage-labels {
-    color: var(--pale-blue);
+    color: var(--blue-200);
     font-size: 12px;
 }
 
 /* Custom Bootstrap Progress Bar */
 .custom-progress {
     height: 20px;
-    background-color: hsl(229, 57%, 11%, 0.6);
+    background-color: var(--blue-950);
     border-radius: 10px;
     padding: 3px;
 }
@@ -107,5 +107,35 @@ font-size: 0.75rem;
 font-weight: 700;
 letter-spacing: 1px;
 color: var(--grayish-blue);
+}
+
+/* Desktop Adjustments (768px and up) */
+@media (min-width: 768px) {
+body {
+background-image: url('./images/bg-desktop.png');
+background-size: 100% 50%;
+background-position: bottom center;
+}
+
+.gb-badge {
+bottom: auto;
+left: auto;
+top: -45px;
+right: 40px;
+transform: none;
+border-bottom-right-radius: 0;
+}
+
+/* Speech Bubble Triangle Pointer on Desktop */
+.gb-badge::after {
+content: '';
+position: absolute;
+bottom: -20px;
+right: 0;
+width: 0;
+height: 0;
+border-top: 20px solid white;
+border-left: 20px solid transparent;
+}
 }
 
